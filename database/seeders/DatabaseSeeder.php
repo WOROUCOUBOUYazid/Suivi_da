@@ -114,8 +114,8 @@ class DatabaseSeeder extends Seeder
         $admin = User::create([
             'nom' => 'Admin',
             'prenom' => 'Super',
-            'email' => 'admin@suivida.com',
-            'password' => Hash::make('admin123'),
+            'email' => 'admin@admin.com',
+            'password' => Hash::make('P@ssw0rd'),
             'poste' => 'Administrateur système',
             'type_connexion' => 'sql',
             'actif' => true,

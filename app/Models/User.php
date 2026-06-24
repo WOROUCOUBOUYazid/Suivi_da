@@ -2,15 +2,17 @@
 
 namespace App\Models;
 
+use Database\Factories\UserFactory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use Laravel\Sanctum\HasApiTokens;
 use Spatie\Permission\Traits\HasRoles;
 
 class User extends Authenticatable
 {
-    /** @use HasFactory<\Database\Factories\UserFactory> */
-    use HasFactory, Notifiable, HasRoles;
+    /** @use HasFactory<UserFactory> */
+    use HasApiTokens, HasFactory, HasRoles, Notifiable;
 
     protected $fillable = [
         'nom',
@@ -39,7 +41,7 @@ class User extends Authenticatable
 
     public function getNomCompletAttribute(): string
     {
-        return trim(($this->prenom ?? '') . ' ' . ($this->nom ?? ''));
+        return trim(($this->prenom ?? '').' '.($this->nom ?? ''));
     }
 
     public function demandesAchats()

@@ -1,10 +1,25 @@
 {
-  "worktrees": {},
-  "sessions": {},
+  "worktrees": {
+    "wt-1782232426360-1": {
+      "branch": "gilded-archduke",
+      "path": "c:\\Users\\yworoucoubou\\Documents\\prog\\Claude\\suivi-da\\.kilo\\worktrees\\gilded-archduke",
+      "parentBranch": "main",
+      "createdAt": "2026-06-23T16:33:46.360Z"
+    }
+  },
+  "sessions": {
+    "ses_10aab531affehh3dP4WaTZhU7w": {
+      "worktreeId": "wt-1782232426360-1",
+      "createdAt": "2026-06-23T16:33:47.770Z"
+    }
+  },
   "tabOrder": {
     "local": [
       "pending:1"
     ]
   },
+  "worktreeOrder": [
+    "wt-1782232426360-1"
+  ],
   "sessionsCollapsed": true
 }

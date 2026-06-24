@@ -72,7 +72,7 @@ class DemandeAchat extends Model
         return $query->whereDoesntHave('relances', function ($q) {
             $q->where('envoyee', true);
         })->whereNotNull('date_estimee_action')
-          ->where('date_estimee_action', '<=', now()->addDays(3));
+            ->where('date_estimee_action', '<=', now()->addDays(3));
     }
 
     public function scopeRetard($query)

@@ -474,14 +474,10 @@ Le code doit être maintenable, testable et facilement extensible.
 Avant de générer du code :
 
 1. Diagramme des entités
-2. Schéma relationnel SQL Server
-3. Diagramme du workflow métier
-4. Cas d'utilisation
-5. Architecture Backend Laravel
-6. Architecture Frontend React
-7. Structure des API REST
-8. Rôles et permissions
-9. Structure des dossiers
-10. Plan de développement détaillé
+2. Diagramme du workflow métier
+3. Architecture Backend Laravel
+4. Architecture Frontend React
+5. Structure des API REST
+6. Plan de développement détaillé
 
 Ne générer aucun code avant validation de l'architecture proposée.

@@ -17,6 +17,14 @@ class Log extends Model
         'ip_address',
     ];
 
+    protected function casts(): array
+    {
+        return [
+            'donnees_avant' => 'array',
+            'donnees_apres' => 'array',
+        ];
+    }
+
     public function utilisateur()
     {
         return $this->belongsTo(User::class, 'utilisateur_id');
