@@ -8,6 +8,7 @@ import dayjs from 'dayjs';
 import 'dayjs/locale/fr';
 import { AuthProvider } from './auth/AuthContext';
 import App from './App';
+import './index.css';
 
 dayjs.locale('fr');
 

@@ -5,6 +5,7 @@ import {
     TeamOutlined,
     SettingOutlined,
     HistoryOutlined,
+    TagsOutlined,
     LogoutOutlined,
     UserOutlined,
 } from '@ant-design/icons';
@@ -27,6 +28,7 @@ export default function AppLayout() {
         items.push({ key: '/admin/utilisateurs', icon: <TeamOutlined />, label: 'Utilisateurs' });
     }
     if (can('manage settings')) {
+        items.push({ key: '/admin/statuts', icon: <TagsOutlined />, label: 'Statuts' });
         items.push({ key: '/admin/parametres', icon: <SettingOutlined />, label: 'Paramètres' });
         items.push({ key: '/admin/logs', icon: <HistoryOutlined />, label: 'Journaux' });
     }

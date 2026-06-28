@@ -7,6 +7,7 @@ import DemandesList from './pages/DemandesList';
 import DemandeForm from './pages/DemandeForm';
 import DemandeDetail from './pages/DemandeDetail';
 import Users from './pages/admin/Users';
+import Statuts from './pages/admin/Statuts';
 import Parametres from './pages/admin/Parametres';
 import Logs from './pages/admin/Logs';
 
@@ -33,6 +34,14 @@ export default function App() {
                     element={
                         <ProtectedRoute permission="manage users">
                             <Users />
+                        </ProtectedRoute>
+                    }
+                />
+                <Route
+                    path="/admin/statuts"
+                    element={
+                        <ProtectedRoute permission="manage settings">
+                            <Statuts />
                         </ProtectedRoute>
                     }
                 />

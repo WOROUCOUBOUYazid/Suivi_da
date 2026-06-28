@@ -8,8 +8,10 @@ export const tokenStore = {
     clear: () => localStorage.removeItem(STORAGE_KEY),
 };
 
+// URL de l'API fournie au build par Vite (cf. .env : VITE_API_URL).
+// Fallback sur '/api' si la variable n'est pas définie.
 const api = axios.create({
-    baseURL: '/api',
+    baseURL: import.meta.env.VITE_API_URL ?? '/api',
     headers: {
         Accept: 'application/json',
     },
